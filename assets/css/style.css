@@ -48,8 +48,6 @@ header {
   }
 .logo img {
     width: 100%;
-    -webkit-animation: montrer 3s;
-    animation: montrer 3s;
 }
 #marseilleRue {
     width: 100%;
@@ -77,10 +75,10 @@ h2 {
     justify-content: center;
 }
 #voituresAnciennes div {
-    width: 40%;
+    width: 100%;
 }
 #voituresAnciennes img {
-    width: 100%;
+    width: 40%;
 }
 #iconServices {
     display: flex;
@@ -94,7 +92,6 @@ h2 {
     width: 70%;
     margin: auto;
     padding: 30px;
-    animation: pulse 1s linear infinite;
 }
 .texteMovement img {
     width: 100%;
@@ -129,6 +126,9 @@ footer {
 #iconSociaux img {
     width: 100%;
 }
+.montrerElement {
+    display: block;
+}
 
 /* ANIMATIONS*/
 
@@ -139,6 +139,13 @@ footer {
     75% {opacity: 75%;}
     100% {opacity: 100%;}
 }
+.montrer {
+  -webkit-animation-name: montrer;
+  animation-name: montrer;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
 @-webkit-keyframes zoomIn {
     from {
       opacity: 0;
@@ -285,8 +292,8 @@ footer {
 }
 
 .pulse {
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
+  -webkit-animation: pulse 1s linear infinite;
+  animation-name: pulse 1s linear infinite;
 }
 
 @-webkit-keyframes fadeInLeft {
@@ -320,4 +327,5 @@ footer {
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
+  animation-duration: 1.5s;
 }

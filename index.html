@@ -5,48 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Garage Casablanca</title>
 </head>
 <body>
     <header>
         <div class="coin">
-            <img src="assets/svg/coin_decoration.svg" alt="logo garage casablanca">
+            <img src="assets/svg/coin_decoration.svg" alt="coin décoration">
         </div>
-        <div class="logo">
+        <div class="logo montrer pourMontrer">
             <img src="assets/svg/logo_casablanca.svg" alt="logo garage casablanca">
         </div>
         <div class="coin2">
-            <img src="assets/svg/coin_decoration.svg" alt="logo garage casablanca">
+            <img src="assets/svg/coin_decoration.svg" alt="coin décoration">
         </div>
     </header>
     <main>
-        <div class="texteMovement pulse animated">
+        <div class="texteMovement pourPulse pulse">
             <img src="assets/svg/texte_restauration.svg" alt="restauration vehicules anciens">
         </div>
         <div id="marseilleRue">
             <img src="assets/images/citroen.png" alt="citroën" class="animated shake">
         </div>
-        <div>
-            <h2 class="fadeInLeft animated">Possédez-vous un véhicule ancien?</h2>
-            <h2>Souhaitez-vous faire réaliser la réfection du moteur ou de la carrosserie?</h2>
-            <h2>Adressez-vous à un spécialiste de la rénovation de véhicules anciens á Marseille, Garage CASABLANCA.</h2>
-        </div>
+        <h2 class="pourMontrer">Possédez-vous un véhicule ancien?</h2>
         <div id="voituresAnciennes">
-            <div>
+            <div class="pourMontrer">
                 <img src="assets/images/citroen-ancienne.png" alt="voiture ancienne">
             </div>
-            <div>
+            <div class="pourMontrer">
                 <img src="assets/images/citroen-ancienne2.png" alt="voiture ancienne">
             </div>
-            <div>
+            <div class="pourMontrer">
                 <img src="assets/images/renault5.png" alt="voiture ancienne">
             </div>
-            <div>
+            <div class="pourMontrer">
                 <img src="assets/images/vintage-car.png" alt="voiture ancienne">
             </div>
         </div>
+        <h2>Souhaitez-vous faire réaliser la réfection du moteur ou de la carrosserie?</h2>
+        <div id="engranage">
+            <img src="assets/images/engranage.png" alt="engranage" id="eng1" class="pourAnimer">
+            <img src="assets/images/engranage.png" alt="engranage" id="eng2">
+            <img src="assets/images/engranage.png" alt="engranage" id="eng3">
+        </div>
+        <h2>Adressez-vous à un spécialiste de la rénovation de véhicules anciens á Marseille, Garage CASABLANCA.</h2>
         <div id="services">
-            <div class="texteMovement">
+            <div class="texteMovement pourPulse pulse">
                 <img src="assets/svg/banderole_services.svg" alt="bservices proposés">
             </div>
             <div id="iconServices">
@@ -63,11 +67,6 @@
                     <p>RESTAURATION</br>COMPLETE</p>
                 </div>
             </div>
-        </div>
-        <div id="engranage">
-            <img src="assets/images/engranage.png" alt="engranage" id="eng1">
-            <img src="assets/images/engranage.png" alt="engranage" id="eng2">
-            <img src="assets/images/engranage.png" alt="engranage" id="eng3">
         </div>
     </main>
     <footer>
@@ -90,6 +89,6 @@
         </div>
 
     </footer>
-    
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
