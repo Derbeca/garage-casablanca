@@ -35,24 +35,9 @@ header {
     height: 100px;
     transform: rotate(180deg);
 }
-#myBtn {
-  width: 50px;
-  display: none;
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 99;
-  cursor: pointer;
-  padding: 8px;
-}
-#myBtn img {
-  width: 100%;
-}
 .logo {
     width: 35%;
-
     margin: auto;
-
 }
 .logo img {
     width: 100%;
@@ -87,26 +72,28 @@ h2 {
     width: 100%;
 }
 #voiture1 {
-    padding-left: 30px;
+    padding-right: 40px;
     padding-bottom: 10px;
-    width: 40%;
+    width: 100%;
     max-width: 200px;
 }
 #voiture2 {
-    width: 50%;
-    padding-left: 30px;
+    width: 100%;
+    padding-right: 50px;
     padding-bottom: 10px;
     max-width: 200px;
 }
 #voiture3 {
-    padding-right: 40px;
-    width: 30%;
-    max-width: 200px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    width: 100%;
+    max-width: 150px;
 }
 #voiture4 {
-  padding-right: 30px;
-  width: 60%;
-  max-width: 200px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    width: 100%;
+    max-width: 200px;
 }
 #iconServices {
     display: flex;
@@ -127,6 +114,10 @@ h2 {
 }
 p {
     font-size: 3.5vmin;
+    padding: 5px;
+}
+#engranage {
+  padding: 10px;
 }
 #eng1 {
     width: 20%;
@@ -146,6 +137,17 @@ footer {
 }
 #contact {
   height: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.myBtn {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+}
+.myBtn img {
+  width: 100%;
 }
 #pied {
     display: flex;
@@ -173,6 +175,39 @@ footer {
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+/* CSS GRAND ECRAN */
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    width: 10%;
+  }
+  #marseilleRue {
+    height: 60vh;
+    animation: mouvement 10s linear infinite;
+}
+  #marseilleRue img {
+    width: 250px;
+    padding-top: 190px;
+  }
+  #voituresAnciennes div {
+    width: 40%;
+  }
+  #voiture1, #voiture2, #voiture3, #voiture4 {
+    width: 80%;
+    padding: 10px;
+  }
+  #engranage {
+    width: 40%;
+    margin: auto;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
 }
 
 /* ANIMATIONS*/
