@@ -35,19 +35,28 @@ header {
     height: 100px;
     transform: rotate(180deg);
 }
+#myBtn {
+  width: 50px;
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 99;
+  cursor: pointer;
+  padding: 8px;
+}
+#myBtn img {
+  width: 100%;
+}
 .logo {
     width: 35%;
+
     margin: auto;
 
 }
-.animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
 .logo img {
     width: 100%;
+    max-width: 200px;
 }
 #marseilleRue {
     width: 100%;
@@ -77,8 +86,27 @@ h2 {
 #voituresAnciennes div {
     width: 100%;
 }
-#voituresAnciennes img {
+#voiture1 {
+    padding-left: 30px;
+    padding-bottom: 10px;
     width: 40%;
+    max-width: 200px;
+}
+#voiture2 {
+    width: 50%;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    max-width: 200px;
+}
+#voiture3 {
+    padding-right: 40px;
+    width: 30%;
+    max-width: 200px;
+}
+#voiture4 {
+  padding-right: 30px;
+  width: 60%;
+  max-width: 200px;
 }
 #iconServices {
     display: flex;
@@ -95,21 +123,29 @@ h2 {
 }
 .texteMovement img {
     width: 100%;
+    max-width: 350px;
 }
 p {
-    font-size: 3vmin;
+    font-size: 3.5vmin;
 }
 #eng1 {
     width: 20%;
+    max-width: 200px;
 }
 #eng2 {
     width: 40%;
+    max-width: 400px;
 }
 #eng3 {
     width: 30%;
+    max-width: 300px;
+    margin-bottom: 20px;
 }
 footer {
     padding: 10px;
+}
+#contact {
+  height: 50px;
 }
 #pied {
     display: flex;
@@ -117,17 +153,26 @@ footer {
 }
 #iconSociaux {
     display: flex;
-    justify-content: space-between;
-    width: 60%;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 #iconSociaux a {
-    width: 20%;
+    width: 30px;
+    display: block;
+    padding: 5px;
 }
 #iconSociaux img {
     width: 100%;
 }
-.montrerElement {
-    display: block;
+.hidden {
+  opacity: 0;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 /* ANIMATIONS*/
@@ -173,6 +218,7 @@ footer {
 .zoomIn {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
+  animation-delay: 3s;
 }
   
 @-webkit-keyframes zoomInDown {
@@ -328,4 +374,30 @@ footer {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
   animation-duration: 1.5s;
+}
+
+@keyframes turnRight {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.rotation {
+  animation: turnRight 3s infinite linear;
+}
+
+@keyframes turnLeft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-359deg);
+  }
+}
+
+.rotation2 {
+  animation: turnLeft 3s infinite linear;
 }

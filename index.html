@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Garage Casablanca</title>
 </head>
 <body>
     <header>
         <div class="coin">
             <img src="assets/svg/coin_decoration.svg" alt="coin décoration">
+            <a id="myBtn" href="tel:+33753617116"><img src="assets/svg/btn_telephone.svg" alt="icone telephone"></a>
         </div>
-        <div class="logo montrer pourMontrer">
+        <div class="logo">
             <img src="assets/svg/logo_casablanca.svg" alt="logo garage casablanca">
         </div>
         <div class="coin2">
@@ -21,32 +21,32 @@
         </div>
     </header>
     <main>
-        <div class="texteMovement pourPulse pulse">
+        <div class="texteMovement pulse">
             <img src="assets/svg/texte_restauration.svg" alt="restauration vehicules anciens">
         </div>
         <div id="marseilleRue">
             <img src="assets/images/citroen.png" alt="citroën" class="animated shake">
         </div>
-        <h2 class="pourMontrer">Possédez-vous un véhicule ancien?</h2>
+        <h2>Possédez-vous un véhicule ancien?</h2>
         <div id="voituresAnciennes">
-            <div class="pourMontrer">
-                <img src="assets/images/citroen-ancienne.png" alt="voiture ancienne">
+            <div class="figure-img">
+                <img src="assets/images/citroen-ancienne.png" alt="voiture ancienne" id="voiture1">
             </div>
-            <div class="pourMontrer">
-                <img src="assets/images/citroen-ancienne2.png" alt="voiture ancienne">
+            <div class="figure-img1">
+                <img src="assets/images/renault5.png" alt="voiture ancienne" id="voiture3">
             </div>
-            <div class="pourMontrer">
-                <img src="assets/images/renault5.png" alt="voiture ancienne">
+            <div class="figure-img2">
+                <img src="assets/images/citroen-ancienne2.png" alt="voiture ancienne" id="voiture2">
             </div>
-            <div class="pourMontrer">
-                <img src="assets/images/vintage-car.png" alt="voiture ancienne">
+            <div class="figure-img3">
+                <img src="assets/images/vintage-car.png" alt="voiture ancienne" id="voiture4">
             </div>
         </div>
         <h2>Souhaitez-vous faire réaliser la réfection du moteur ou de la carrosserie?</h2>
         <div id="engranage">
-            <img src="assets/images/engranage.png" alt="engranage" id="eng1" class="pourAnimer">
-            <img src="assets/images/engranage.png" alt="engranage" id="eng2">
-            <img src="assets/images/engranage.png" alt="engranage" id="eng3">
+            <img src="assets/images/engranage.png" alt="engranage" id="eng1" class="rotation">
+            <img src="assets/images/engranage.png" alt="engranage" id="eng2" class="rotation2">
+            <img src="assets/images/engranage.png" alt="engranage" id="eng3" class="rotation">
         </div>
         <h2>Adressez-vous à un spécialiste de la rénovation de véhicules anciens á Marseille, Garage CASABLANCA.</h2>
         <div id="services">
@@ -55,15 +55,15 @@
             </div>
             <div id="iconServices">
                 <div>
-                    <img src="assets/svg/icon_entretien.svg" alt="entretien">
+                    <img src="assets/svg/icon_entretien.svg" alt="entretien" class="icon">
                     <p>ENTRETIEN</p>
                 </div>
                 <div>
-                    <img src="assets/svg/icon_reparation.svg" alt="réparation">
+                    <img src="assets/svg/icon_reparation.svg" alt="réparation" class="icon">
                     <p>REPARATION</p>
                 </div>
                 <div>
-                    <img src="assets/svg/icon_restauration.svg" alt="restauration">
+                    <img src="assets/svg/icon_restauration.svg" alt="restauration" class="icon">
                     <p>RESTAURATION</br>COMPLETE</p>
                 </div>
             </div>
@@ -89,6 +89,7 @@
         </div>
 
     </footer>
+    <script src="assets/js/scrollreveal.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
